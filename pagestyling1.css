@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: lightpink;
+}
+
+/* for mobile */
+@media only screen and (max-width: 460px) {
+  header {
+    font-size: 0.7em;
+    padding-right: 10%;
+    width: 100%;
+  }
+
+  main {
+    font-size: 0.7em;
+    width: 100%;
+  }
+
+  div.grid1 {
+    display: grid;
+    font-size: 0.7em;
+    grid-template-rows: 4;
+    grid-template-columns: 12;
+    grid-template-areas:
+      "box1 box1 box1"
+      "box2 box2 box2"
+      "box3 box3 box3"
+      "box4 box4 box4"
+      "box5 box5 box5"
+      "box6 box6 box6"
+      "box7 box7 box7"
+      "box8 box8 box8";
+  }
+
+  .grid1 div {
+    background-color: lightpink;
+    border-radius: 5px;
+    border: #4c175a;
+    margin: 15px;
+    padding: 15px;
+    align-items: center;
+    border-style: solid;
+    border-width: 4px;
+    text-align: center;
+    width: max-content;
+    height: fit-content;
+  }
+
+  #box1 {
+    display: flex;
+    grid-area: box1;
+  }
+
+  #box2 {
+    display: flex;
+    grid-area: box2;
+  }
+
+  #box3 {
+    display: flex;
+    grid-area: box3;
+  }
+
+  #box4 {
+    display: flex;
+    grid-area: box4;
+  }
+
+  footer {
+    font-size: 0.7em;
+  }
+
+  #box5 {
+    display: flex;
+    grid-area: box5;
+  }
+
+  #box6 {
+    display: flex;
+    grid-area: box6;
+  }
+
+  #box7 {
+    display: flex;
+    grid-area: box7;
+  }
+
+  #box8 {
+    display: flex;
+    grid-area: box8;
+  }
+  .topnav {
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a#prjnovbttn {
+    color: black;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    margin-right: 15%;
+    max-width: 32px;
+    max-height: 32px;
+    background: rgb(105, 11, 105);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+
+/* for normal screens */
+@media only screen and (min-width: 460px) {
+  header {
+    padding: 20px 50px;
+    box-shadow: 0 5px 8px #ddd;
+    background-color: #4c175a;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  header {
+    color: white;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+
+  header a:hover {
+    color: gold;
+  }
+
+  main.homepgmain {
+    align-items: center;
+    background-color: lightpink;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    text-wrap: wrap;
+  }
+
+  .grid1 {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 12;
+    grid-template-areas:
+      "box1 box1 box1 box2 box2 box2 box3 box3 box3 box4 box4 box4"
+      "box5 box5 box5 box6 box6 box6 box7 box7 box7 box8 box8 box8";
+  }
+
+  .grid1 div {
+    background-color: lightpink;
+    border-radius: 5px;
+    border: #4c175a;
+    margin: 15px;
+    padding: 15px;
+    align-items: center;
+    border-style: solid;
+    border-width: 4px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  #box1 {
+    grid-area: box1;
+  }
+
+  #box2 {
+    grid-area: box2;
+  }
+
+  #box3 {
+    grid-area: box3;
+  }
+
+  #box4 {
+    grid-area: box4;
+  }
+
+  #box5 {
+    grid-area: box5;
+  }
+
+  #box6 {
+    grid-area: box6;
+  }
+
+  #box7 {
+    grid-area: box7;
+  }
+
+  #box8 {
+    grid-area: box8;
+  }
+
+  img.novalogoimg {
+    width: 45%;
+    height: 45%;
+  }
+
+  .topnav a.icon{
+    display:none;
+  }
+
+  .topnav{
+    justify-content: end;
+    align-self: center;
+    display: flex;
+  }
+
+  
+  
+
+}
+/* for slightly smaller screens */
+@media only screen and (max-width: 960px) {
+  header {
+    padding: 20px 50px;
+    box-shadow: 0 5px 8px #ddd;
+    background-color: #4c175a;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  header h1 {
+    padding-right: 45%;
+    padding-left: 5%;
+  }
+
+  header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: bold;
+    border: 0.5px solid rgba(255, 255, 255, 0.425);
+    background-color: #4c175a73;
+    text-wrap: nowrap;
+  }
+
+  nav div {
+    justify-content: end;
+    align-self: center;
+  }
+
+  header {
+    color: white;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+
+  header a:hover {
+    color: gold;
+  }
+
+  main.homepgmain {
+    align-items: center;
+    background-color: lightpink;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    text-wrap: wrap;
+  }
+
+  .grid1 {
+    display: grid;
+    grid-template-rows: 4;
+    grid-template-columns: 6;
+    grid-template-areas:
+      "box1 box1 box1 box2 box2 box2"
+      "box3 box3 box3 box4 box4 box4"
+      "box5 box5 box5 box6 box6 box6"
+      "box7 box7 box7 box8 box8 box8";
+  }
+
+  .grid1 div {
+    background-color: lightpink;
+    border-radius: 5px;
+    border: #4c175a;
+    margin: 15px;
+    padding: 15px;
+    align-items: center;
+    border-style: solid;
+    border-width: 4px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  #box1 {
+    grid-area: box1;
+  }
+
+  #box2 {
+    grid-area: box2;
+  }
+
+  #box3 {
+    grid-area: box3;
+  }
+
+  #box4 {
+    grid-area: box4;
+  }
+
+  #box5 {
+    grid-area: box5;
+  }
+
+  #box6 {
+    grid-area: box6;
+  }
+
+  #box7 {
+    grid-area: box7;
+  }
+
+  #box8 {
+    grid-area: box8;
+  }
+
+  img.novalogoimg {
+    width: 45%;
+    height: 45%;
+  }
+}
+
+/* .topnav {
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+  border: solid 2px rgb(255, 0, 0); 
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a#prjnovbttn{
+  color: black;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon{
+  max-width: 32px;
+  max-height: 32px;
+  background: rgb(105, 11, 105);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+} */
